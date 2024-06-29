@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><title>Rock</title></head>
+<body>
+
+<h2>We played rock!</h2>
+<p><%=@opponent%></p>
+
+<% if @opponent == 1 %>
+<h2><%="They played rock!"%></h2> 
+<h2><%="We tied!"%></h2> 
+
+<% elsif @opponent == 2 %>
+<h2><%="They played paper!"%></h2> 
+<h2><%="We lost!"%></h2>
+
+<% else %>
+<h2><%="They played scissors!"%></h2> 
+<h2><%="We won!"%></h2>
+
+<% end %>
+
+
+
+</body> 
+</html>
